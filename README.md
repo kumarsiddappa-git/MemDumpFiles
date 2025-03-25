@@ -51,6 +51,10 @@ Now lets use pxsview which
 
 ![image](https://github.com/user-attachments/assets/32662e35-bd93-402e-8cf7-6ce6fc65a49a)
 
+We have four columns PSLIST , PSSCAN , THRDSCCAN and CSRSS , which gives more details into it 
+
+PSLIST - Only Provides the list of process from the Kernel Standard Process table which is like executing the PS or TOP command in different Operating System.
+PSSCAN - Is like list of process which are hidden 
 
 
 
