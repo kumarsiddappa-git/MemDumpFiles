@@ -67,7 +67,21 @@ So we have to combine the results from each of the columns and try to idenfity t
 
 That PSLIST = FALSE and PSSCAN is True which means the process is hidden. so Consider that as a strong indicator.
 
-We found that the taskdll is not listed in PSLIST, but found udner PSSCAN (which gives hidden process), WE can even try and find other process , here we are concentrating on ho to find the suspicious process. We can even consider other columns for example if PSLIST = FALSE and PSSCAN = False and THRDSCAN is TRUE , that is also a string indicator of Suspcious Process, so consider that as well.
+We found that the taskdll is not listed in PSLIST, but found udner PSSCAN (which gives hidden process), WE can even try and find other process , here we are concentrating on how to find the suspicious process. We can even consider other columns for example if PSLIST = FALSE and PSSCAN = False and THRDSCAN is TRUE , that is also a string indicator of Suspcious Process, so consider that as well.
+
+
+We tried to see taskdll.exe was used or executed by any of the exe file using cmdline but fund nothing and we also checked using filescan to see if file exist in memory or opened, we were success
+
+
+![image](https://github.com/user-attachments/assets/086fbcb6-b9f3-4cc2-8b69-b3b2a0d5cb12)
+
+
+![image](https://github.com/user-attachments/assets/3f292cc2-eb67-47da-93fc-c4b20d98713d)
+
+
+![image](https://github.com/user-attachments/assets/a024d303-f95c-437a-a8e1-9a2c1a11f589)
+
+Since we did not find anything on the cmdline options for taskdl.exe, it could be its not exececuted ,so we have two paths , one is to find he PID of the taskdl.exe and dump the files else check on the parent, here we are checking on parent.
 
 Now lets see what is the parent process of the file and we found out that its 2732 which is the parent of multiple files, so lets try to find the file if present , and also cmdline for it. Since we have parent process , lets see what is inside it 
 
