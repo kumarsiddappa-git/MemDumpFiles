@@ -18,7 +18,7 @@ https://downloads.volatilityfoundation.org/volatility3/symbols/windows.zip and p
 ![image](https://github.com/user-attachments/assets/ca76e38f-934f-47c4-a501-4aabea542dee)
 
 
-Have a file attached that the mem file which was capture using ftk imager
+Have a file attached that the mem file which was capture using ftk imager , the memory captured is huge size so you can use FTK imager to capture the mem file and follow the instructions.
 https://www.exterro.com/ftk-product-downloads/ftk-imager-4-7-3-81 
 
 Lets validate if our volatility is working or not by using 
